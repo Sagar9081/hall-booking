@@ -18,4 +18,4 @@ app.use((req, res, next) => {
 app.use("/hallbooking", hallbooking);
 app.use("/bookedroom", bookedroom);
 app.use("/customer-entry", customer);
-app.listen(3003, () => console.log("server listening at port 3003"));
+app.listen(process.env.PORT||3003, () => console.log("server listening at port 3003"));
